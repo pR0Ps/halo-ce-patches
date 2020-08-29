@@ -131,12 +131,9 @@ haloce.exe
 ;threshold.
 0008F7E2: 7E EB
 ;
-;Change the targets of a `FLD` + `FSUB` pair to the same value to put a 0 in `ST0`. `ST0` (which
-;has 0) is then multiplied by the accelleration, removing it.
-;0008F819: 80 05
-;0008F81A: 84 00
-;0008F81F: A0 25
-;0008F820: 74 00
+;Change an `FADD` to a `FLD` so the constant mouse speed is loaded into `ST0` instead of being
+;added to the previous acceleration calculation.
+0008F826: D8 D9
 
 
 Block update checks
