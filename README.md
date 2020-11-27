@@ -5,6 +5,7 @@ A `.crk` file that defines byte-level patches for Halo CE v1.0.10
 
 Patches
 -------
+- Make LAA (large address aware), allowing it to use up to 4GB of RAM (normal limit is 2GB).
 - Remove DRM and key checks: Allows playing and hosting games without a valid CD key. Pretty much a
   requirement now since the game was released in 2004 and is no longer available for purchase.
 - Bind server to 0.0.0.0 instead of the (poorly) auto-detected local IP: Fixes hosting servers on
