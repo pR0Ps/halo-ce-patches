@@ -49,6 +49,26 @@ haloce.exe
 00041696: CA C9
 
 
+Disable safe mode prompt
+haloce.exe
+;-----------------------
+;Prevents the safe mode prompt from showing and always tries to continue normally. Safe mode is
+;completely broken on modern systems and is pretty easy to accidentally enable from the prompt.
+;If you really want to try safe mode (why?), the `-safemode` launch flag still works.
+;
+;If something went wrong and "safe mode" is an option, just `JMP` to the end of the function.
+;(safe mode is off by default)
+001822D0: 8B E9
+001822D1: 4D 57
+001822D2: 08 02
+001822D3: 51 00
+001822D4: 8B 00
+;
+;Use `XOR EAX,EAX`, `RET` to always return 0 ("continue")
+0018252C: 8B 31
+0018252D: C3 C0
+
+
 Disable modification of OS-level gamma
 haloce.exe
 ;-------------------------------------

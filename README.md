@@ -10,6 +10,7 @@ Patches
   requirement now since the game was released in 2004 and is no longer available for purchase.
 - Bind server to 0.0.0.0 instead of the (poorly) auto-detected local IP: Fixes hosting servers on
   computers with multiple network interfaces.
+- Prevents asking about and using safe mode since it's broken on modern hardware.
 - Disable setting an "exit flag" in the registry.
 - Continue to draw the screen when focus is lost: Useful when playing in windowed mode.
 - Disable gamma modification: Prevents the game from setting the OS-level brightness.
