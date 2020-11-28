@@ -12,7 +12,6 @@ Patches
   computers with multiple network interfaces.
 - Prevents asking about and using safe mode since it's broken on modern hardware.
 - Disable setting an "exit flag" in the registry.
-- Continue to draw the screen when focus is lost: Useful when playing in windowed mode.
 - Disable gamma modification: Prevents the game from setting the OS-level brightness.
 - Disable auto-centering the crosshair in vehicles: This disables the game automatically pulling
   your crosshair to the center of the screen.

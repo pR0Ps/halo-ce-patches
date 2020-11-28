@@ -120,22 +120,6 @@ haloce.exe
 00181E42: 1C C3
 
 
-Continue to draw screen when focus is lost
-haloce.exe
-;-----------------------------------------
-;Useful when combined with the `-window` flag.
-;
-;`JZ` to `JMP`
-000CAE83: 74 EB
-;
-;Remove a `JNZ`
-000CB323: 75 90
-000CB324: 11 90
-;
-;`JZ` to `JMP`
-000CB5A9: 74 EB
-;
-
 Disable auto-centering the crosshair in vehicles
 haloce.exe
 ;-----------------------------------------------
