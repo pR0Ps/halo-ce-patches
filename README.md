@@ -5,21 +5,22 @@ A `.crk` file that defines byte-level patches for Halo CE v1.0.10
 
 Patches
 -------
-- Make LAA (large address aware), allowing it to use up to 4GB of RAM (normal limit is 2GB).
+- Make the game LAA (large address aware) allowing it to use up to 4GB of RAM (normal limit is 2GB).
 - Remove DRM and key checks: Allows playing and hosting games without a valid CD key. Pretty much a
   requirement now since the game was released in 2004 and is no longer available for purchase.
-- Bind server to 0.0.0.0 instead of the (poorly) auto-detected local IP: Fixes hosting servers on
-  computers with multiple network interfaces.
+- Always bind the game server to 0.0.0.0 instead of the (poorly) auto-detected local IP: Fixes
+  hosting servers on computers with multiple network interfaces.
 - Prevents asking about and using safe mode since it's broken on modern hardware.
-- Disable setting an "exit flag" in the registry.
+- Disable showing the EULA on first run (removes the need for eula.dll).
+- Disable setting an exit status flag in the registry.
 - Disable gamma modification: Prevents the game from setting the OS-level brightness.
 - Disable auto-centering the crosshair in vehicles: This disables the game automatically pulling
   your crosshair to the center of the screen.
 - Disable mouse acceleration.
 - Block checking for game updates.
 
-With all the patches applied, no registry modifications will be made by the game. This is ideal for
-a portable executable.
+With the EULA, exit status, and gamma patches applied, no modifications to the registry will be made
+by the game. This is ideal for a portable executable.
 
 Applying the patches
 --------------------

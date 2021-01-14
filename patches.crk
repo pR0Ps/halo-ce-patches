@@ -104,7 +104,7 @@ haloce.exe
 00144711: 68 00
 
 
-Disable registry modifications
+Disable storing exit status in the registry
 haloce.exe
 ;-----------------------------
 ;Makes the executable more portable by not requiring/adding registry keys.
