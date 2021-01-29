@@ -16,6 +16,7 @@ Patches
 - Disable gamma modification: Prevents the game from setting the OS-level brightness.
 - Disable auto-centering the crosshair in vehicles: This disables the game automatically pulling
   your crosshair to the center of the screen.
+- Prevent weapon descoping when taking damage.
 - Disable mouse acceleration.
 - Block checking for game updates.
 

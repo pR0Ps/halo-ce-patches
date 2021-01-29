@@ -162,6 +162,21 @@ haloce.exe
 0017A922: EC C3
 
 
+Prevent descoping when taking damage
+haloce.exe
+;-----------------------------------
+;Prevents zoomed-in weapons from descoping when the player takes damage.
+;Note that this gives a significant advantage in some situations so it's probably best to only
+;apply and use this if everyone you're playing with does as well.
+;
+;`NOP` out the call to the descope function
+0016B0F1: E8 90
+0016B0F2: 8A 90
+0016B0F3: DD 90
+0016B0F4: FF 90
+0016B0F5: FF 90
+
+
 Add tag
 haloce.exe
 ;------
