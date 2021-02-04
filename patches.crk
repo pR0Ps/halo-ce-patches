@@ -90,6 +90,21 @@ haloce.exe
 00125A00: 83 C3
 
 
+Fix blue explosions when using 32-bit textures
+haloce.exe
+;---------------------------------------------
+;When using maps with uncompressed 32-bit textures, brown explosions would render as blue.
+;Uncompressed 32-bit colors are defined in ARGB but laid out in memory as BGRA due to endianness.
+;Without this patch, only the first 8 bits (the blue channel) were copied and the rest were set to
+;0, causing blue explosions.
+;
+;Replace `MOVZX BYTE` with `MOV DWORD`
+00127C57: 0F 8B
+00127C58: B6 74
+00127C59: 34 3A
+00127C5A: 3A 00
+
+
 Disable EULA
 haloce.exe
 ;-----------

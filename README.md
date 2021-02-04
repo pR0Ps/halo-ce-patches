@@ -14,6 +14,7 @@ Patches
 - Disable showing the EULA on first run (removes the need for eula.dll).
 - Disable setting an exit status flag in the registry.
 - Disable gamma modification: Prevents the game from setting the OS-level brightness.
+- Fix explosions being rendered as blue when using maps with uncompressed 32-bit textures.
 - Disable auto-centering the crosshair in vehicles: This disables the game automatically pulling
   your crosshair to the center of the screen.
 - Disable the camera shaking caused by firing weapons or taking damage.
