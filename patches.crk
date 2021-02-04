@@ -162,6 +162,17 @@ haloce.exe
 0017A922: EC C3
 
 
+Disable camera shaking
+haloce.exe
+;---------------------
+;Disables the camera shaking that happens when firing weapons or taking damage since it's a bit
+;broken at high framerates.
+;
+;Turn a `JNE` into a `NOP`, `JMP` to skip over the code that applies the shaking.
+000CC46D: 0F 90
+000CC46E: 85 E9
+
+
 Prevent descoping when taking damage
 haloce.exe
 ;-----------------------------------
